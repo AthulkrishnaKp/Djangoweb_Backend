@@ -1,0 +1,345 @@
+{
+	"info": {
+		"_postman_id": "ae547100-add2-4bb2-81c3-f2980c203b54",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29700802"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/token/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "athul@22",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password@22",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/token/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/signin/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 0719ef59063652361220f3647eb81a089e01e3ea",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "athul@22",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password@22",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/signin/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"signin",
+						""
+					]
+				},
+				"description": "Users can signin providing correct username and password"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/signup/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 0719ef59063652361220f3647eb81a089e01e3ea",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8000/signup/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"signup",
+						""
+					]
+				},
+				"description": "To see List of all Users"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/signup/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 0719ef59063652361220f3647eb81a089e01e3ea",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "anukul",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "anu@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "anukul@111",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password@111",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "4512562358",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/signup/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"signup",
+						""
+					]
+				},
+				"description": "To Create New Users, Signup or Registration part"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/post/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 0719ef59063652361220f3647eb81a089e01e3ea",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/post/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"post",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				},
+				"description": "To see List of all Posts , every user can see this"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/post/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 0719ef59063652361220f3647eb81a089e01e3ea",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "my Title test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "description test",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "tags",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "tags",
+							"value": "8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/post/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"post",
+						""
+					]
+				},
+				"description": "Url to Create new post ."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/post/2/delete/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 0719ef59063652361220f3647eb81a089e01e3ea",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/post/1/delete/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"post",
+						"1",
+						"delete",
+						""
+					]
+				},
+				"description": "To delete the post the user have posted , if the post is not posted by his it reply \"You don't have permission to delete this post\""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/post/4/like/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 0719ef59063652361220f3647eb81a089e01e3ea",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/post/12/like/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"post",
+						"12",
+						"like",
+						""
+					]
+				},
+				"description": "Url To Like The Post\r\nHere 2 is the post_id\r\n(If you run the url once you will like the post, if you run the url again for same post you will un-Like the post)\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/like/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 0719ef59063652361220f3647eb81a089e01e3ea",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/like/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"like",
+						""
+					]
+				},
+				"description": "To get the list of all Like's ."
+			},
+			"response": []
+		}
+	]
+}

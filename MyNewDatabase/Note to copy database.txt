@@ -1,0 +1,14 @@
+How to copy this database into your system:
+
+1. Create a database in your mysql:
+        mysql command : create databse [your databasename];
+
+2. open the database you have created:
+        mysql command : use [your databasename];
+
+3. to copy my database file to your database :
+        mysql command : source [f:\mynewdatabase\newdjangoapi.sql]
+                        then click enter 
+
+
+ By doing this you can copy my database to your system.
